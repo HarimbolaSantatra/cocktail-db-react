@@ -1,0 +1,38 @@
+.dark-banner {
+        background: var(--dark-bg);
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+}
+
+#header {
+        align-items: center;
+}
+
+#brand {
+        padding: 10px 6px;
+}
+
+#menu {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 35px;
+}
+
+#search {
+        display: flex;
+        gap: 10px;
+}
+
+#search {
+        padding: 10px 6px;
+        color: var(--dark-bg);
+}
+
+input {
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        font-size: 0.9em;
+}
