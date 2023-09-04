@@ -72,10 +72,13 @@ input {
 
 }
 
-.CardList {
+.section {
         padding: 25px;
 }
 
+.CardList {
+        display: block;
+}
 
 .CardList_list {
         display: flex;
@@ -85,7 +88,7 @@ input {
         row-gap: 25px;
 }
 
-.CardList_title {
+.SectionTitle {
         font-weight: bold;
         font-size: 2em;
         text-transform: uppercase;
@@ -137,6 +140,37 @@ input {
 }
 
 
+.Newsletter {
+}
+
+.Newsletter_services {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+}
+
+.NewsletterItem {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        font-size: 1.4em;
+        padding-top: 1%;
+        padding-bottom: 1%;
+}
+
+.NewsletterItem_title {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-transform: uppercase;
+}
+
+.NewsletterItem div {
+        text-align: center;
+}
+
+
 /* MOBILE */
 @media (max-width: 768px) {
         #breadcrumb {
@@ -146,7 +180,7 @@ input {
                 font-size: 2em;
         }
 
-        .CardList_title {
+        .SectionTitle {
                 font-size: 1.5em;
                 padding-bottom: 15px;
         }
