@@ -72,30 +72,70 @@ input {
 
 }
 
-.card-list {
+.CardList {
+        padding: 25px;
+}
+
+
+.CardList_list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        column-gap: 15px;
+        row-gap: 25px;
 }
 
-.card {
+.CardList_title {
+        font-weight: bold;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--dark-bg);
+        padding-bottom: 25px;
+}
+
+
+.Card {
         width: 25%;
+        box-shadow: 7px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.Card img {
         width: 100%;
         object-fit: cover;
 }
 
-.card-footer {
+.Card_footer {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding: 12px;
 }
 
-.card-title {
-        font-weight: bold;
+.Card_title {
 }
+
+.Card_like {
+        display: block;
+}
+
+
+.Card_like svg {
+        width: 30px;
+        height: auto;
+}
+
+.Card_like svg {
+        fill: transparent;
+}
+
+.Card_like.liked svg {
+        fill: var(--orange);
+}
+
+.Card_like svg path {
+        stroke: var(--orange);
+}
+
 
 /* MOBILE */
 @media (max-width: 768px) {
