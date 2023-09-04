@@ -28,4 +28,34 @@ function Breadcrumb(){
         )
 }
 
-export { Header, Breadcrumb };
+function Card({title="Fresh Midori Sour", like=117}) {
+    return(
+        <div className="card">
+            <img src="/img/main.jpg" alt="drink-cover" />
+            <div className="card-footer">
+                <div className="card-title">
+                    {title}
+                </div>
+                <div className="card-like"> {like} </div>
+            </div>
+        </div>
+        )
+}
+
+function CardList({title}) {
+    return(
+        <div className="card-content">
+            <div> {title} </div>
+            <div className="card-list"> 
+                <Card/>
+                <Card title={"Appletini"}/>
+                <Card title={"Samba Margarita"}/>
+                <Card title={"Nectaria"}/>
+                <Card title={"Summer Fish Bowl"}/>
+                <Card title={"El Tesoro Paloma"}/>
+            </div>
+        </div>
+        )
+}
+
+export { Header, Breadcrumb, Card, CardList };

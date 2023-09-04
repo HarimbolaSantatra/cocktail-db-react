@@ -33,8 +33,12 @@
 .btn {
         padding: 8px;
         border-radius: 5px;
-        border: none;
         font-size: 0.9em;
+        border: solid white 3px;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
 }
 
 input {
@@ -68,6 +72,32 @@ input {
 
 }
 
+.card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+}
+
+.card {
+        width: 25%;
+}
+
+.card img {
+        width: 100%;
+        object-fit: cover;
+}
+
+.card-footer {
+        display: flex;
+        justify-content: space-between;
+}
+
+.card-title {
+        font-weight: bold;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
         #breadcrumb {
                 
