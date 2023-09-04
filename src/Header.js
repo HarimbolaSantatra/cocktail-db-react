@@ -2,8 +2,6 @@ import * as React from 'react';
 import {useRef, useEffect} from 'react';
 
 
-
-
 function Header(){
     return(
         <div id="header" className="dark-banner">
@@ -21,4 +19,13 @@ function Header(){
         )
 }
 
-export {Header};
+function Breadcrumb(){
+    return(
+        <div id="breadcrumb">
+            <div className="bc-title">The best run recipes under the sun</div>
+            <button className="btn bc-btn">Explore Cocktails</button>
+        </div>
+        )
+}
+
+export { Header, Breadcrumb };
