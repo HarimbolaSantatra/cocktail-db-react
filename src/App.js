@@ -7,7 +7,7 @@ import { Home } from './Page.js';
 import logo from './logo.svg';
 
 import './Base.css';
-import './Header.css';
+import './Components.css';
 
 function App() {
         return(

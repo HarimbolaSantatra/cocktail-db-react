@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Header, Breadcrumb, CardList, Newsletter  } from './Header.js';
+import { Header, Breadcrumb, CardList, Newsletter  } from './Components.js';
 import { cssColor } from './Consts.js';
 import styled from 'styled-components';
 
