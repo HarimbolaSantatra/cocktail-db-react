@@ -19,11 +19,63 @@ function Header(){
         )
 }
 
+function Button({type="white", text="Not Text", size="little", chevron="none", round}) {
+
+    // class
+    let cl = "";
+    switch(type) {
+    case "white": 
+        cl = "btn bc-btn white-btn";
+        break;
+    case "orange": 
+        cl = "btn bc-btn orange-btn";
+        break;
+    default:
+        cl = "btn bc-btn white-btn";
+        break;
+    }
+
+    // button size
+    switch(size) {
+    case "little": 
+        cl += " little-btn";
+        break;
+    case "big": 
+        cl += " big-btn";
+        break;
+    default:
+        cl += " little-btn";
+        break;
+    }
+
+    // chevron
+    switch (chevron) {
+    case "right":
+        text += " >>";
+        break;
+    case "left":
+        text += " <<";
+        break;
+    default:
+        break;
+    }
+
+    // round
+    if (round) {
+        cl += " round-btn";
+    }
+
+    return(
+            <button className={cl}> {text} </button>
+        )
+}
+
 function Breadcrumb(){
+
     return(
         <div id="breadcrumb">
             <div className="bc-title">The best run recipes under the sun</div>
-            <button className="btn bc-btn">Explore Cocktails</button>
+            <Button text="Explore Cocktails" type="white" round/>
         </div>
         )
 }
@@ -137,6 +189,12 @@ function Newsletter() {
                     title="Like Your Favorites" 
                     description={likeDesc}
                     />
+            </div>
+            <div className="Newsletter_button">
+                <Button text="Register" type="orange" size="big" 
+                    chevron="right"/>
+                <Button text="Sign In" type="orange" size="big" 
+                    chevron="right"/>
             </div>
         </div>
         )

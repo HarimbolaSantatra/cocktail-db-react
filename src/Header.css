@@ -31,15 +31,34 @@
 }
 
 .btn {
-        padding: 8px;
-        border-radius: 5px;
         font-size: 0.9em;
         border: solid white 3px;
         background-color: transparent;
-        color: white;
         font-weight: bold;
         text-transform: uppercase;
 }
+
+.white-btn {
+        color: white;
+}
+
+.orange-btn {
+        color: var(--orange);
+        border: solid var(--orange) 3px;
+}
+
+.little-btn {
+        padding: 8px;
+}
+
+.big-btn {
+        padding: 15px;
+}
+
+.round-btn {
+        border-radius: 5px;
+}
+
 
 input {
         padding: 12px;
@@ -168,6 +187,12 @@ input {
 
 .NewsletterItem div {
         text-align: center;
+}
+
+.Newsletter_button {
+        display: flex;
+        gap: 3%;
+        justify-content: center;
 }
 
 
