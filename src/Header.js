@@ -25,13 +25,13 @@ function Button({type="white", text="Not Text", size="little", chevron="none", r
     let cl = "";
     switch(type) {
     case "white": 
-        cl = "btn bc-btn white-btn";
+        cl = "Button bc-btn white-btn";
         break;
     case "orange": 
-        cl = "btn bc-btn orange-btn";
+        cl = "Button bc-btn orange-btn";
         break;
     default:
-        cl = "btn bc-btn white-btn";
+        cl = "Button bc-btn white-btn";
         break;
     }
 
@@ -169,7 +169,7 @@ function Newsletter() {
                     "then easily access them on your personal Dashboard page when you are ready" +
                     " to make your drink recipes.";
     const listDesc = "No need to double back to the store! Keep all those importantn ingredients on hand.";
-    const likeDesc = "Show your appreciation fro the dirnks you love";
+    const likeDesc = "Show your appreciation fro the drinks you love";
     
     return(
         <div className="section Newsletter">

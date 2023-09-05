@@ -30,7 +30,7 @@
         color: var(--dark-bg);
 }
 
-.btn {
+.Button {
         font-size: 0.9em;
         border: solid white 3px;
         background-color: transparent;
@@ -165,7 +165,9 @@ input {
 .Newsletter_services {
         display: flex;
         justify-content: center;
-        gap: 50px;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 20px;
 }
 
 .NewsletterItem {
@@ -212,5 +214,23 @@ input {
 
         .Card {
                 width: 35%;
+        }
+
+        .Button {
+                font-size: 0.7em;
+        }
+
+        .little-btn {
+                padding: 5px;
+        }
+
+        .big-btn {
+                padding: 12px;
+        }
+
+        .Newsletter_services {
+                font-size: 0.6em;
+                margin-top: 40px;
+                margin-bottom: 60px;
         }
 }
