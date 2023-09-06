@@ -78,7 +78,7 @@ input {
 #breadcrumb {
         background-image: url('/img/main.jpg');
         background-origin: border-box;
-        background-position: 0% 75%;
+        background-position: 0% 70%;
         background-repeat: no-repeat;
         background-size: 100%;
         box-sizing: border-box;
@@ -296,7 +296,7 @@ input {
                 height: 30vh;
         }
         .bc-title {
-                font-size: 1.3em;
+                font-size: 1.6em;
                 width: 45%;
         }
 
