@@ -4,8 +4,6 @@ import { Route, Routes } from "react-router-dom";
 
 import { Home } from './Page.js';
 
-import logo from './logo.svg';
-
 import './Base.css';
 import './Components.css';
 
