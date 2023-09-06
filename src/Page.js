@@ -5,13 +5,13 @@ import styled from 'styled-components';
 
 function Home() {
         return (
-        <div>
+        <>
                 <Header/>
                 <Breadcrumb/>
                 <CardList title={"Trending Recipes"}/>
                 <Newsletter/>
                 <Footer />
-        </div>
+        </>
         );
 }
 
