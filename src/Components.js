@@ -108,7 +108,7 @@ function Newsletter() {
                     description={likeDesc}
                     />
             </div>
-            <div className="Newsletter_button">
+            <div className="btn-group">
                 <Button text="Register" type="orange" size="big" 
                     chevron="right"/>
                 <Button text="Sign In" type="orange" size="big" 
@@ -118,4 +118,87 @@ function Newsletter() {
         )
 }
 
-export { Header, Breadcrumb, CardList, Newsletter };
+function FooterItem ({title, children, behavior="wrap"}) {
+    let cl = "FooterItem_child";
+    switch(behavior){
+        case "wrap":
+            cl += " FooterItem_child__wrap";
+            break;
+        case "column":
+            cl += " FooterItem_child__column";
+            break;
+        default:
+            cl +=  " FooterItem_child__not-grid";
+            break;
+    }
+    return(
+            <div className="FooterItem"> 
+                <div className="FooterItem_title"> {title} </div>
+                <div className={cl}>{children}</div>
+            </div>
+    )
+}
+
+function FooterBox ({title, children}) {
+        return(
+                <div className="FooterBox">
+                    <div className="FooterBox_title" > {title} </div>
+                    {children}
+                </div>
+        )
+}
+
+function Footer() {
+    return (
+        <div className="Footer">
+            <FooterItem behavior={"none"} >
+                <img className="little-logo" src="img/logo.png" alt="logo" />
+                <div className="btn-group">
+                    <Button type="white" text="Register"/>
+                    <Button type="orange" text="Sign In"/>
+                </div>
+            </FooterItem>
+            <FooterItem title="Popular Search">
+                <FooterBox title="drink type">
+                   <a href="#"> Manhattan Drinks </a> 
+                   <a href="#"> Martini Drinks</a> 
+                   <a href="#"> Old Fashioned Drinks </a> 
+                </FooterBox>
+                <FooterBox title="Spirits">
+                   <a href="#"> Bourbon Cocktails </a> 
+                   <a href="#"> Rum Cocktails</a> 
+                   <a href="#"> Tequila Cocktails </a> 
+                </FooterBox>
+                <FooterBox title="Seasonal">
+                   <a href="#"> Winter Drinks</a> 
+                </FooterBox>
+                <FooterBox title="Occasions">
+                   <a href="#"> Bachelorette Party Drinks </a> 
+                   <a href="#"> Brunch Drinks </a> 
+                   <a href="#"> Everyday Drinks </a> 
+                </FooterBox>
+            </FooterItem>
+            <FooterItem title="Site Links" behavior="column">
+                <FooterBox title="Company">
+                   <a href="#"> About </a> 
+                   <a href="#"> Brands </a> 
+                   <a href="#"> Site Map </a> 
+                </FooterBox>
+                <FooterBox title="Policies">
+                   <a href="#"> Cookie Policy </a> 
+                   <a href="#"> Privacy </a> 
+                   <a href="#"> Terms & COnditions </a> 
+                   <a href="#"> Privacy Settings </a> 
+                   <a href="#"> Supply Chain Transparence </a> 
+                   <a href="#"> Accessibility Statement </a> 
+                </FooterBox>
+                <FooterBox title="Ressources">
+                   <a href="#"> Drink Smart  </a> 
+                   <a href="#">Global Markging </a> 
+                </FooterBox>
+            </FooterItem>
+        </div>
+        )
+}
+
+export { Header, Breadcrumb, CardList, Newsletter, Footer };
