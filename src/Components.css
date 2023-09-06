@@ -299,4 +299,14 @@ input {
                 margin-top: 40px;
                 margin-bottom: 60px;
         }
+
+        .Footer {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 5px;
+                column-gap: 5px;
+                justify-content: center;
+                vertical-align: center
+        }
+
 }
