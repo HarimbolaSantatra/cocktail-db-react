@@ -11,6 +11,7 @@
 
 #header {
         align-items: center;
+        text-align: center;
 }
 
 #brand {
@@ -25,7 +26,21 @@
 }
 
 #burger-menu {
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        max-height:0;
+}
+#modal-menu{
+        visibility: hidden;
+        opacity:0;
+        max-height:0;
+        max-width: 0;
+}
+#modal-close-btn{
+        visibility: hidden;
+        opacity:0;
+        max-height:0;
+        max-width: 0;
 }
 
 #search {
@@ -291,15 +306,75 @@ input {
                 width: 40%;
         }
         #burger-menu {
-                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+                max-height: 100%;
+                max-width: 100%;
                 width:30px;
                 height:auto;
         }
+        #modal-menu.hide {
+                visibility: hidden;
+                opacity:0;
+                max-height:0;
+                max-width: 0;
+        }
+        #modal-menu.show{
+                visibility: visible;
+                opacity: 1;
+                max-height: 100%;
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.7);
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0; left:0;
+                font-size: 1.8em;
+                font-weight: bold;
+        }
+        #modal-close-btn.hide {
+                visibility: hidden;
+                opacity:0;
+                max-height:0;
+                max-width: 0;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+        }
+        #modal-close-btn.show {
+                visibility: visible;
+                opacity: 1;
+                max-height: 100%;
+                max-width: 100%;
+                display: inline-block;
+                width: 40px;
+                height: auto;
+        }
+        #modal-close-btn > path {
+                fill: #fff;
+        }
         #menu {
-                display: none;
+                visibility: hidden;
+                opacity:0;
+                max-height:0;
+                max-width: 0;
+                margin:0;
+                padding:0;
+                overflow: hidden;
         }
         #search {
-                display: none;
+                visibility: hidden;
+                opacity:0;
+                max-height:0;
+                max-width: 0;
+                margin:0;
+                padding:0;
+                overflow: hidden;
         }
 
         #breadcrumb {
