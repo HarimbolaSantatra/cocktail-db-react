@@ -14,6 +14,7 @@
 }
 
 #brand {
+        width: 20%;
         padding: 10px 6px;
 }
 
@@ -21,6 +22,10 @@
         display: flex;
         flex-wrap: nowrap;
         gap: 35px;
+}
+
+#burger-menu {
+        display: none;
 }
 
 #search {
@@ -89,6 +94,7 @@ input {
         font-size: 2.9em;
         text-transform: uppercase;
         width: 35%;
+        margin-bottom: 2%;
 }
 
 .bc-btn {
@@ -270,11 +276,28 @@ input {
 
 /* MOBILE */
 @media (max-width: 768px) {
+
+        #brand {
+                width: 40%;
+        }
+        #burger-menu {
+                display: inline-block;
+                width:30px;
+                height:auto;
+        }
+        #menu {
+                display: none;
+        }
+        #search {
+                display: none;
+        }
+
         #breadcrumb {
                 height: 30vh;
         }
         .bc-title {
-                font-size: 2em;
+                font-size: 1.3em;
+                width: 45%;
         }
 
         .SectionTitle {
