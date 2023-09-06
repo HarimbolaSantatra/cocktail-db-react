@@ -306,6 +306,7 @@ input {
                 width: 40%;
         }
         #burger-menu {
+                pointer: cursor;
                 visibility: visible;
                 opacity: 1;
                 max-height: 100%;
@@ -337,16 +338,8 @@ input {
                 font-size: 1.8em;
                 font-weight: bold;
         }
-        #modal-close-btn.hide {
-                visibility: hidden;
-                opacity:0;
-                max-height:0;
-                max-width: 0;
-                margin:0;
-                padding:0;
-                overflow: hidden;
-        }
-        #modal-close-btn.show {
+        #modal-close-btn {
+                cursor: pointer;
                 visibility: visible;
                 opacity: 1;
                 max-height: 100%;
@@ -358,6 +351,7 @@ input {
         #modal-close-btn > path {
                 fill: #fff;
         }
+
         #menu {
                 visibility: hidden;
                 opacity:0;
