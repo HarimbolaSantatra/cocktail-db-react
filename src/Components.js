@@ -21,9 +21,9 @@ function Header(){
                 <div> The Bar Cart </div>
             </div>
             <div id="menu">
-                <div> Cocktails </div>
-                <div> Tips & Tricks </div>
-                <div> The Bar Cart </div>
+                <a href="#"> Cocktails </a>
+                <a href="#"> Tips & Tricks </a>
+                <a href="#"> The Bar Cart </a>
             </div>
             <form id='search' action="">
                 <input type="text" placeholder="Drink or ingredient ..." />
