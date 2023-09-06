@@ -39,6 +39,7 @@
 }
 
 .Button {
+        cursor: pointer;
         font-size: 0.9em;
         border: solid white 3px;
         background-color: transparent;
@@ -52,7 +53,16 @@
 
 .orange-btn {
         color: var(--orange);
-        border: solid var(--orange) 3px;
+        border-color: var(--orange);
+}
+
+.white-btn:hover{
+        color: var(--orange);
+        border-color: var(--orange);
+}
+.orange-btn:hover{
+        color: var(--white);
+        border-color: var(--white);
 }
 
 .little-btn {
