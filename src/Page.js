@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useEffect} from 'react';
-import { Header, Breadcrumb, CardList, Newsletter, Footer} from './Components.js';
+import { Header, Breadcrumb, CardList, Card, Newsletter, Footer} from './Components.js';
 
 function Home() {
         // Import script modal.js
@@ -15,7 +15,14 @@ function Home() {
         <>
                 <Header/>
                 <Breadcrumb/>
-                <CardList title={"Trending Recipes"}/>
+                <CardList title={"Trending Recipes"}>
+                    <Card/>
+                    <Card title={"Appletini"}/>
+                    <Card title={"Samba Margarita"} isLiked/>
+                    <Card title={"Nectaria"}/>
+                    <Card title={"Summer Fish Bowl"}/>
+                    <Card title={"El Tesoro Paloma"} isLiked/>
+                </CardList>
                 <Newsletter/>
                 <Footer />
         </>

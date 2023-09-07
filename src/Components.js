@@ -67,17 +67,12 @@ function Card({title="Fresh Midori Sour", likeNb=117, isLiked}) {
 }
 
 
-function CardList({title}) {
+function CardList({title, children}) {
     return(
         <div className="section CardList">
             <SectionTitle title={title} />
             <div className="CardList_list"> 
-                <Card/>
-                <Card title={"Appletini"}/>
-                <Card title={"Samba Margarita"} isLiked/>
-                <Card title={"Nectaria"}/>
-                <Card title={"Summer Fish Bowl"}/>
-                <Card title={"El Tesoro Paloma"} isLiked/>
+                {children}
             </div>
         </div>
         )
@@ -214,4 +209,4 @@ function Footer() {
         )
 }
 
-export { Header, Breadcrumb, CardList, Newsletter, Footer };
+export { Header, Breadcrumb, CardList, Card, Newsletter, Footer };
