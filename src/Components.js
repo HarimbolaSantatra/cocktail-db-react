@@ -21,9 +21,9 @@ function Header(){
                 <div> The Bar Cart </div>
             </div>
             <div id="menu">
-                <a href="#"> Cocktails </a>
-                <a href="#"> Tips & Tricks </a>
-                <a href="#"> The Bar Cart </a>
+                <a href="#header"> Cocktails </a>
+                <a href="#header"> Tips & Tricks </a>
+                <a href="#header"> The Bar Cart </a>
             </div>
             <form id='search' action="">
                 <input type="text" placeholder="Drink or ingredient ..." />
@@ -173,41 +173,41 @@ function Footer() {
             </FooterItem>
             <FooterItem title="Popular Search">
                 <FooterBox title="drink type">
-                   <a href="#"> Manhattan Drinks </a> 
-                   <a href="#"> Martini Drinks</a> 
-                   <a href="#"> Old Fashioned Drinks </a> 
+                   <a href="#header"> Manhattan Drinks </a> 
+                   <a href="#header"> Martini Drinks</a> 
+                   <a href="#header"> Old Fashioned Drinks </a> 
                 </FooterBox>
                 <FooterBox title="Spirits">
-                   <a href="#"> Bourbon Cocktails </a> 
-                   <a href="#"> Rum Cocktails</a> 
-                   <a href="#"> Tequila Cocktails </a> 
+                   <a href="#header"> Bourbon Cocktails </a> 
+                   <a href="#header"> Rum Cocktails</a> 
+                   <a href="#header"> Tequila Cocktails </a> 
                 </FooterBox>
                 <FooterBox title="Seasonal">
-                   <a href="#"> Winter Drinks</a> 
+                   <a href="#header"> Winter Drinks</a> 
                 </FooterBox>
                 <FooterBox title="Occasions">
-                   <a href="#"> Bachelorette Party Drinks </a> 
-                   <a href="#"> Brunch Drinks </a> 
-                   <a href="#"> Everyday Drinks </a> 
+                   <a href="#header"> Bachelorette Party Drinks </a> 
+                   <a href="#header"> Brunch Drinks </a> 
+                   <a href="#header"> Everyday Drinks </a> 
                 </FooterBox>
             </FooterItem>
             <FooterItem title="Site Links" behavior="column">
                 <FooterBox title="Company">
-                   <a href="#"> About </a> 
-                   <a href="#"> Brands </a> 
-                   <a href="#"> Site Map </a> 
+                   <a href="#header"> About </a> 
+                   <a href="#header"> Brands </a> 
+                   <a href="#header"> Site Map </a> 
                 </FooterBox>
                 <FooterBox title="Policies">
-                   <a href="#"> Cookie Policy </a> 
-                   <a href="#"> Privacy </a> 
-                   <a href="#"> Terms & COnditions </a> 
-                   <a href="#"> Privacy Settings </a> 
-                   <a href="#"> Supply Chain Transparence </a> 
-                   <a href="#"> Accessibility Statement </a> 
+                   <a href="#header"> Cookie Policy </a> 
+                   <a href="#header"> Privacy </a> 
+                   <a href="#header"> Terms & COnditions </a> 
+                   <a href="#header"> Privacy Settings </a> 
+                   <a href="#header"> Supply Chain Transparence </a> 
+                   <a href="#header"> Accessibility Statement </a> 
                 </FooterBox>
                 <FooterBox title="Ressources">
-                   <a href="#"> Drink Smart  </a> 
-                   <a href="#">Global Markging </a> 
+                   <a href="#header"> Drink Smart  </a> 
+                   <a href="#header">Global Markging </a> 
                 </FooterBox>
             </FooterItem>
         </div>
