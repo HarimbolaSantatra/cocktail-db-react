@@ -108,7 +108,7 @@ input {
         font-size: 0.9em;
 }
 
-#breadcrumb {
+#Carousel {
         background-image: url('/img/main.jpg');
         background-origin: border-box;
         background-position: 0% 70%;
@@ -380,7 +380,7 @@ input {
                 overflow: hidden;
         }
 
-        #breadcrumb {
+        #Carousel {
                 height: 30vh;
         }
         .bc-title {

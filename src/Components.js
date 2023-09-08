@@ -35,9 +35,9 @@ function Header(){
 
 
 
-function Breadcrumb(){
+function Carousel(){
     return(
-        <div id="breadcrumb">
+        <div id="Carousel">
             <div className="bc-title">The best run recipes under the sun</div>
             <Button text="Explore Cocktails" type="white" round/>
         </div>
@@ -209,4 +209,4 @@ function Footer() {
         )
 }
 
-export { Header, Breadcrumb, CardList, Card, Newsletter, Footer };
+export { Header, Carousel, CardList, Card, Newsletter, Footer };

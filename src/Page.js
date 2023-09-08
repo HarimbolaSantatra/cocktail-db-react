@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useEffect} from 'react';
-import { Header, Breadcrumb, CardList, Card, Newsletter, Footer} from './Components.js';
+import { Header, Carousel, CardList, Card, Newsletter, Footer} from './Components.js';
 
 function Home() {
         // Import script 
@@ -14,7 +14,7 @@ function Home() {
         return (
         <>
                 <Header/>
-                <Breadcrumb/>
+                <Carousel/>
                 <CardList title={"Trending Recipes"}>
                     <Card/>
                     <Card title={"Appletini"}/>
@@ -29,8 +29,13 @@ function Home() {
         );
 }
 
-function CocktailRecipe() {
-        return 0;
+function CocktailDetail() {
+    return(
+        <>
+            <Header />
+            <Footer />
+        </>
+    );
 }
 
-export {Home, CocktailRecipe} ;
+export {Home, CocktailDetail} ;
