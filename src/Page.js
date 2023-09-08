@@ -3,11 +3,14 @@ import {useEffect} from 'react';
 import { Header, Breadcrumb, CardList, Card, Newsletter, Footer} from './Components.js';
 
 function Home() {
-        // Import script modal.js
+        // Import script 
         useEffect(() => {
                 const body = document.querySelector('body');
+                const modal_script = document.createElement('modal_script');
+                modal_script.setAttribute('src', 'modal.js');
+                body.appendChild(modal_script);
                 const script = document.createElement('script');
-                script.setAttribute('src', 'modal.js');
+                script.setAttribute('src', 'script.js');
                 body.appendChild(script);
         }, []);
 

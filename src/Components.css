@@ -181,6 +181,7 @@ input {
 
 .Card_like {
         display: block;
+        cursor: pointer;
 }
 
 
