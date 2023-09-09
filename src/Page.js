@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useEffect} from 'react';
-import { Header, Carousel, CardList, Card, Newsletter, Footer} from './Components.js';
+import { Header, Carousel, CardList, Card, Newsletter, Footer, Breadcrumb} from './Components.js';
 
 function Home() {
         // Import script 
@@ -33,6 +33,7 @@ function CocktailDetail() {
     return(
         <>
             <Header />
+            <Breadcrumb paths={["Home", "Margarita", "Sauza Classic"]} />
             <Footer />
         </>
     );
