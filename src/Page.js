@@ -27,7 +27,6 @@ function Home() {
     switch(action.type){
       case 'CARDS_UPDATE':
         let len = Object.keys(state).length; 
-          console.log(state);
         if ( len === 5 ) {
             setCardLoading(false);
         }
