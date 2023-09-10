@@ -2,6 +2,12 @@ import * as React from 'react';
 import {Button, SectionTitle, PlusSvg, HeartSvg, ListSvg} from './Utils.js';
 
 
+function Loading({ text="Is Loading ..."}) {
+    return(
+        <div style={{padding: "30px"}}> {text} </div>
+    )
+}
+
 function Header(){
     return(
         <div id="header" className="dark-banner">
@@ -46,11 +52,11 @@ function Carousel(){
 
 
 
-function Card({title="Fresh Midori Sour", likeNb=117, isLiked}) {
+function Card({idDrink=0, title="", likeNb=0, isLiked, imgUrl="img/margarita.jpeg"}) {
     const Card_likeClass = isLiked ? "Card_like liked": "Card_like";
     return(
         <div className="Card">
-            <img src="/img/margarita.jpeg" alt="drink-cover" />
+            <img src={imgUrl} alt="drink-cover" />
             <div className="Card_footer">
                 <div className="Card_title">
                     {title}
@@ -67,7 +73,7 @@ function Card({title="Fresh Midori Sour", likeNb=117, isLiked}) {
 }
 
 
-function CardList({title, children}) {
+function CardList({title, isLoading, children}) {
     return(
         <div className="section CardList">
             <SectionTitle title={title} />
@@ -220,4 +226,4 @@ function Breadcrumb({paths}) {
     )
 }
 
-export { Header, Carousel, CardList, Card, Newsletter, Footer, Breadcrumb };
+export { Header, Carousel, CardList, Card, Newsletter, Footer, Breadcrumb, Loading};
