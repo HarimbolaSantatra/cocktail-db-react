@@ -1,22 +1,3 @@
-// LIKE BUTTON
-const toggleLike = (cardLikeDiv) => {
-    let likeNb = parseInt(cardLikeDiv.lastChild.textContent);
-    if (cardLikeDiv.classList.contains('liked')){
-        cardLikeDiv.classList.remove('liked');
-        cardLikeDiv.lastChild.textContent = likeNb - 1;
-    } 
-    else{
-        cardLikeDiv.classList.add('liked');
-        cardLikeDiv.lastChild.textContent = likeNb + 1;
-    }
-}
-const cardLikeBtns = document.querySelectorAll('.Card_like') ;
-
-cardLikeBtns.forEach(likeBtn => {
-    likeBtn.addEventListener('click', ()=> {
-        toggleLike(likeBtn);
-    });
-});
 
 // MODAL MEMU FOR MOBILE
 
