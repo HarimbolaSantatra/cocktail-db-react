@@ -45,7 +45,25 @@
 }
 
 
-/* MOBILE */
+/* ======= MOBILE ========== */
 @media (max-width: 768px) {
+
+    .Detail_content {
+        display: grid;
+        grid-template-rows: 2fr 2fr 1fr;
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        border-top: 1px solid black;
+    }
+
+    .Detail_FeatList {
+        row-gap: 15px;
+        border: none;
+        margin-right: 0;
+    }
+
+    .Detail_desc {
+        margin-top: 0;
+    }
 
 }
