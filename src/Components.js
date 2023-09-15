@@ -72,10 +72,12 @@ function Card({idDrink=0, title="", likeNb=0, isLiked, imgUrl="img/margarita.jpe
 
     return(
         <div className="Card">
-            <img src={imgUrl} alt="drink-cover" />
+            <a href={`detail/${idDrink}`}>
+              <img src={imgUrl} alt="drink-cover" />
+            </a>
             <div className="Card_footer">
                 <div className="Card_title">
-                    {title}
+                    <a href={`detail/${idDrink}`}> {title} </a>
                 </div>
                 <div className={Card_likeClass} onClick={toggleLike}> 
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

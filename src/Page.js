@@ -82,6 +82,7 @@ function Home() {
 );
 }
 
+
 function CocktailDetail() {
   return(
     <>
