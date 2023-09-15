@@ -5,6 +5,7 @@ import { Home, CocktailDetail } from './Page.js';
 
 import './Base.css';
 import './Components.css';
+import './DetailCompo.css';
 
 function App() {
         return(

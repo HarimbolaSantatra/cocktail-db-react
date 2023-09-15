@@ -233,15 +233,4 @@ function Footer() {
         )
 }
 
-function Breadcrumb({paths}) {
-    const breadcrumbs = paths.map(element => 
-        <span className="breadcrumbs_text"> { element } >> </span>
-    )
-    return(
-        <div>
-            {breadcrumbs}
-        </div>
-    )
-}
-
-export { Header, Carousel, CardList, Card, Newsletter, Footer, Breadcrumb, Loading};
+export { Header, Carousel, CardList, Card, Newsletter, Footer, Loading};

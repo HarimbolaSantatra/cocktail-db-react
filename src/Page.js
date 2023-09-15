@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState, useReducer } from 'react';
-import { Header, Carousel, CardList, Card, Newsletter, Footer, Breadcrumb, Loading} from './Components.js';
+import { Header, Carousel, CardList, Card, Newsletter, Footer, Loading} from './Components.js';
+import { DetailContainer, Breadcrumb, Detail } from './DetailCompo.js';
 import { endpoints } from './Consts.js';
 
 function Home() {
@@ -18,7 +19,6 @@ function Home() {
   }, []);
 
   const [cardLoading, setCardLoading] = useState(true);
-
 
     // REDUCER
   const cardsReducer = (state, action) => {
@@ -84,13 +84,21 @@ function Home() {
 
 
 function CocktailDetail() {
+  const mockDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," ;
   return(
     <>
     <Header />
-    <Breadcrumb paths={["Home", "Margarita", "Sauza Classic"]} />
+    <DetailContainer>
+      <Breadcrumb paths={["Home", "Margarita", "Sauza Classic"]} />
+      <Detail
+        title={"Sauza Classic Margarita"}
+        desc={mockDesc}
+      />
+    </ DetailContainer>
     <Footer />
     </>
   );
 }
 
-export {Home, CocktailDetail} ;
+
+export {Home, CocktailDetail};
