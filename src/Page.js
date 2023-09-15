@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState, useReducer } from 'react';
-import { Header, Carousel, CardList, Card, Newsletter, Footer, Loading} from './Components.js';
+import { useParams } from 'react-router-dom';
+import { Header, Carousel, CardList, Card, Newsletter, Footer, Loading } from './Components.js';
 import { DetailContainer, Breadcrumb, Detail } from './DetailCompo.js';
 import { endpoints } from './Consts.js';
 
@@ -84,16 +85,53 @@ function Home() {
 
 
 function CocktailDetail() {
+
   const mockDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," ;
+
+  // save drink details data
+  const [drinksDetail, setDrinksDetails] = useState({});
+  const [feats, setFeats ] = useState([]);
+  // save loading API status
+  const [loading, setLoading] = useState(true);
+  // save drink id from URL
+  const {drinkId} = useParams();
+
+  // API request for detail about drink
+  useEffect(() => {
+      for(let i=0; i<6; i++){
+          fetch( endpoints.cocByID + drinkId )
+              .then(resp => resp.json())
+              .then(resp => {
+                setDrinksDetails(resp.drinks[0]);
+                setFeats([ 
+                  resp.drinks[0].strIngredient1,
+                  resp.drinks[0].strCategory,
+                  resp.drinks[0].strAlcoholic,
+                  ])
+                setLoading(false);
+              })
+    }
+  }, [])
+
+  // Loading screen or main content
+  let mainContent = loading ? 
+      ( <Loading text={' Details are loading ...'}/> ) :
+      (
+        <>
+        <Breadcrumb paths={["Home", "Margarita", "Sauza Classic"]} />
+        <Detail
+          title={drinksDetail.strDrink}
+          desc={drinksDetail.strInstructions}
+          feats={feats}
+        />
+        </>
+      );
+
   return(
     <>
     <Header />
     <DetailContainer>
-      <Breadcrumb paths={["Home", "Margarita", "Sauza Classic"]} />
-      <Detail
-        title={"Sauza Classic Margarita"}
-        desc={mockDesc}
-      />
+      {mainContent}
     </ DetailContainer>
     <Footer />
     </>

@@ -36,7 +36,40 @@ function Feat ({title, desc, color="black", svg}) {
 }
 
 
-function Detail ( {title, desc } ) {
+/*
+ * map a string to a svg component
+ * Parameters
+ *  string
+ */
+function mapSvg(svgStr) {
+  let svgResult = null;
+  switch(svgStr) {
+    case 'drink':
+      svgResult = DrinkSvg();
+      break;
+    case 'flavor':
+      svgResult = FlavorSvg();
+      break;
+    case 'skill':
+      svgResult = SkillSvg();
+      break;
+    default:
+      svgResult = DrinkSvg();
+      break;
+  }
+  return svgResult;
+}
+
+
+/*
+ * Show detail
+ * Parameters
+ *  title
+ *  desc
+ *  feats: list of string
+ */
+function Detail ( {title, desc, feats } ) {
+
   return(
     <div >
       <div className="Detail_title"> { title } </div>
@@ -44,17 +77,17 @@ function Detail ( {title, desc } ) {
         <div className='Detail_FeatList'>
           <Feat 
           title={"Main Spirit"}
-          desc={"Tequilla"}
+          desc={feats[0]}
           svg={DrinkSvg()}
           />
           <Feat 
             title={"Flavor"}
-            desc={"Tequilla"}
+            desc={feats[1]}
             svg={FlavorSvg()}
           />
           <Feat 
           title={"Skill Level"}
-          desc={"Beginner"}
+          desc={feats[2]}
           svg={SkillSvg()}
           />
         </div>
