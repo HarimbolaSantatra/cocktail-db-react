@@ -13,10 +13,8 @@ function Home() {
     // Import script 
     const body = document.querySelector('body');
     const script = document.createElement('script');
-
     script.setAttribute('src', 'script.js');
     body.appendChild(script);
-
   }, []);
 
   const [cardLoading, setCardLoading] = useState(true);
