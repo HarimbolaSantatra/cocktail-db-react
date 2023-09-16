@@ -9,7 +9,7 @@ function importScript () {
   useEffect(() => {
     const body = document.querySelector('body');
     const script = document.createElement('script');
-    script.setAttribute('src', 'script.js');
+    script.setAttribute('src', '/script.js');
     script.setAttribute('type', 'text/javascript');
     body.appendChild(script);
   }, []);

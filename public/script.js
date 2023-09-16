@@ -4,13 +4,16 @@
 const toggleModal = () => {
     const modalMenu = document.querySelector('.modal-menu');
     if (modalMenu.classList.contains('hide')){
-        modalMenu.className = "show";
+        modalMenu.classList.add("show");
+        modalMenu.classList.remove("hide");
     }
     else if (modalMenu.classList.contains('show')){
-        modalMenu.className = "hide";
+        modalMenu.classList.remove("show");
+        modalMenu.classList.add("hide");
     }
     else{
-        modalMenu.className = "hide";
+        modalMenu.classList.remove("show");
+        modalMenu.classList.add("hide");
     }
 } 
 

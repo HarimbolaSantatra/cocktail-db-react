@@ -13,7 +13,7 @@ function Loading({ text="Is Loading ..."}) {
 function Header(){
     return(
         <div id="header" className="dark-banner">
-            <img id="brand" src="img/logo.png" alt="logo" />
+            <img id="brand" src="/img/logo.png" alt="logo" />
             <svg className="burger-menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 18L20 18" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
                 <path d="M4 12L20 12" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
@@ -54,7 +54,7 @@ function Carousel(){
 
 
 
-function Card({idDrink=0, title="", likeNb=0, isLiked, imgUrl="img/margarita.jpeg"}) {
+function Card({idDrink=0, title="", likeNb=0, isLiked, imgUrl="/img/margarita.jpeg"}) {
     const [liked, setLiked] = useState(isLiked);
     const [likeNumber, setLikeNumber] = useState(likeNb);
     const Card_likeClass = liked ? "Card_like liked": "Card_like";
@@ -184,7 +184,7 @@ function Footer() {
     return (
         <div className="Footer">
             <FooterItem behavior={"none"} >
-                <img className="little-logo" src="img/logo.png" alt="logo" />
+                <img className="little-logo" src="/img/logo.png" alt="logo" />
                 <div className="btn-group">
                     <Button type="white" text="Register"/>
                     <Button type="orange" text="Sign In"/>
