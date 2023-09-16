@@ -37,31 +37,6 @@ function Feat ({title, desc, color="black", svg}) {
 
 
 /*
- * map a string to a svg component
- * Parameters
- *  string
- */
-function mapSvg(svgStr) {
-  let svgResult = null;
-  switch(svgStr) {
-    case 'drink':
-      svgResult = DrinkSvg();
-      break;
-    case 'flavor':
-      svgResult = FlavorSvg();
-      break;
-    case 'skill':
-      svgResult = SkillSvg();
-      break;
-    default:
-      svgResult = DrinkSvg();
-      break;
-  }
-  return svgResult;
-}
-
-
-/*
  * Show detail
  * Parameters
  *  title
