@@ -129,7 +129,7 @@ input {
         font-size: 2.9em;
         text-transform: uppercase;
         width: 35%;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
 }
 
 .bc-btn {
@@ -406,6 +406,7 @@ input {
         .bc-title {
                 font-size: 1.6em;
                 width: 45%;
+                margin-bottom: 1%;
         }
 
         .SectionTitle {
@@ -427,8 +428,8 @@ input {
         }
 
         .big-btn {
-                padding: 12px;
-                width: 145px;
+                padding: 10px;
+                width: 125px;
         }
 
         .Newsletter_services {

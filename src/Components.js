@@ -47,7 +47,7 @@ function Carousel(){
     return(
         <div id="Carousel">
             <div className="bc-title">The best run recipes under the sun</div>
-            <Button text="Explore Cocktails" type="white" round/>
+            <Button text="Explore Cocktails" type="white" round size='big' />
         </div>
         )
 }
