@@ -98,8 +98,14 @@
         width: 145px;
 }
 
+.bigger-btn {
+        font-size: 1.1em;
+        padding: 20px;
+        width: 200px;
+}
+
 .round-btn {
-        border-radius: 5px;
+        border-radius: 6px;
 }
 
 
@@ -328,6 +334,51 @@ input {
 
 }
 
+.hide {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        max-width: 0;
+}
+
+.show {
+        visibility: visible;
+        opacity: 1;
+        max-height: 100%;
+        max-width: 100%;
+}
+
+.Announcement {
+        background-image: url('/img/main.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+
+.Announcement_box {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 40%;
+        height: 70%;
+        z-index: 99;
+}
+
+.Announcement_box a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -343,12 +394,7 @@ input {
                 width:30px;
                 height:auto;
         }
-        .modal-menu.hide {
-                visibility: hidden;
-                opacity:0;
-                max-height:0;
-                max-width: 0;
-        }
+        
         .modal-menu.show{
                 visibility: visible;
                 opacity: 1;
@@ -432,6 +478,12 @@ input {
                 width: 125px;
         }
 
+        .bigger-btn {
+                font-size: 1em;
+                padding: 15px;
+                width: 180px;
+        }
+
         .Newsletter_services {
                 font-size: 0.6em;
                 margin-top: 20px;
@@ -445,6 +497,18 @@ input {
                 column-gap: 5px;
                 justify-content: center;
                 vertical-align: center
+        }
+
+        .Announcement_box {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 8px;
+                width: 80%;
+                height: 70%;
+                z-index: 99;
         }
 
 }

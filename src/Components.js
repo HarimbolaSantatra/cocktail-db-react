@@ -2,8 +2,6 @@ import * as React from 'react';
 import { useState } from 'react';
 import {Button, SectionTitle, PlusSvg, HeartSvg, ListSvg} from './Utils.js';
 
-
-
 function Loading({ text="Is Loading ..."}) {
     return(
         <div style={{padding: "30px"}}> {text} </div>
@@ -233,4 +231,36 @@ function Footer() {
         )
 }
 
-export { Header, Carousel, CardList, Card, Newsletter, Footer, Loading};
+
+function Announce () {
+    return (
+        <div className="Announcement show">
+            <div className='Announcement_box'>
+                <div style={{
+                    fontSize: "1.4em",
+                    fontWeight: 'bold',
+                    textAlign: 'center'
+                }}>
+                    Please read the following announcement before entering.
+                </div>
+                <ul style={{
+                    fontSize: "1.2em",
+                    textAlign: 'center'
+                }}>
+                    <li> This website is just for demonstration and learning purposes.
+                        It's not a commercial website. <br/>
+                        It is heavily inspired by www.thecocktailproject.com <br />
+                        We are not affiliated with them in any way.
+                        </li>
+                    <li> This website contains image of alcoholic and non-alcoholic beverage. You must be of legal age to enter this site. </li>
+                    <li> Design inspired by : <a href="https://www.thecocktailproject.com/"> The Cocktail Project </a> </li>
+                    <li> Database API provided by <a href="http://www.thecocktaildb.com/api.php"> The CocktailDB </a> </li>
+                </ul>
+                <Button id={"Announcement_button"} type={'orange'} text={'I understand'} size={'bigger'} onClick={'none'} />
+            </div>
+        </div>
+        );
+}
+
+
+export { Header, Carousel, CardList, Card, Newsletter, Footer, Loading, Announce };

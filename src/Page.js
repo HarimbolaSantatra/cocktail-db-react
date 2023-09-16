@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Header, Carousel, CardList, Card, Newsletter, Footer, Loading } from './Components.js';
 import { DetailContainer, Breadcrumb, Detail } from './DetailCompo.js';
 import { endpoints } from './Consts.js';
+import { Announce } from './Components.js'
 
 function importScript () {
   useEffect(() => {
@@ -63,6 +64,7 @@ function Home() {
 
   return (
     <>
+    <Announce />
     <Header/>
     <Carousel/>
     <CardList title={"Trending Recipes"} >

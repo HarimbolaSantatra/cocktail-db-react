@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({type="white", text="Not Text", size="little", chevron="none", round}) {
+function Button({type="white", text="Not Text", size="little", chevron="none", round, id="", onClick='default'}) {
 
     // class
     let cl = "";
@@ -24,9 +24,24 @@ function Button({type="white", text="Not Text", size="little", chevron="none", r
     case "big": 
         cl += " big-btn";
         break;
+    case "bigger": 
+        cl += " bigger-btn";
+        break;
     default:
         cl += " little-btn";
         break;
+    }
+
+    switch (onClick) {
+        case 'default':
+            cl += ' default';
+            break;
+        case 'none':
+            cl += '';
+            break;
+        default:
+            cl += ' default';
+            break;
     }
 
     // chevron
@@ -47,7 +62,7 @@ function Button({type="white", text="Not Text", size="little", chevron="none", r
     }
 
     return(
-            <button className={cl}> {text} </button>
+            <button id={id} className={cl}> {text} </button>
         )
 }
 
