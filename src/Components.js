@@ -13,7 +13,7 @@ function Loading({ text="Is Loading ..."}) {
 function Header(){
     return(
         <div id="header" className="dark-banner">
-            <img id="brand" src="/img/logo.png" alt="logo" />
+            <a href="/"><img id="brand" src="/img/logo.png" alt="logo" /></a>
             <svg className="burger-menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 18L20 18" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
                 <path d="M4 12L20 12" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
