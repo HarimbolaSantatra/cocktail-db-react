@@ -33,18 +33,18 @@
 #menu > a:hover {
         color: var(--orange);
 }
-#burger-menu {
+.burger-menu {
         visibility: hidden;
         opacity:0;
         max-height:0;
 }
-#modal-menu{
+.modal-menu{
         visibility: hidden;
         opacity:0;
         max-height:0;
         max-width: 0;
 }
-#modal-close-btn{
+.modal-close-btn{
         visibility: hidden;
         opacity:0;
         max-height:0;
@@ -334,7 +334,7 @@ input {
         #brand {
                 width: 40%;
         }
-        #burger-menu {
+        .burger-menu {
                 pointer: cursor;
                 visibility: visible;
                 opacity: 1;
@@ -343,13 +343,13 @@ input {
                 width:30px;
                 height:auto;
         }
-        #modal-menu.hide {
+        .modal-menu.hide {
                 visibility: hidden;
                 opacity:0;
                 max-height:0;
                 max-width: 0;
         }
-        #modal-menu.show{
+        .modal-menu.show{
                 visibility: visible;
                 opacity: 1;
                 max-height: 100%;
@@ -367,7 +367,7 @@ input {
                 font-size: 1.8em;
                 font-weight: bold;
         }
-        #modal-close-btn {
+        .modal-close-btn {
                 cursor: pointer;
                 visibility: visible;
                 opacity: 1;
@@ -377,7 +377,7 @@ input {
                 width: 40px;
                 height: auto;
         }
-        #modal-close-btn > path {
+        .modal-close-btn > path {
                 fill: #fff;
         }
 

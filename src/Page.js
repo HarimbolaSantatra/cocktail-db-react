@@ -5,19 +5,23 @@ import { Header, Carousel, CardList, Card, Newsletter, Footer, Loading } from '.
 import { DetailContainer, Breadcrumb, Detail } from './DetailCompo.js';
 import { endpoints } from './Consts.js';
 
+function importScript () {
+  useEffect(() => {
+    const body = document.querySelector('body');
+    const script = document.createElement('script');
+    script.setAttribute('src', 'script.js');
+    script.setAttribute('type', 'text/javascript');
+    body.appendChild(script);
+  }, []);
+}
+
 function Home() {
 
   // cards: array of Object
   //      each Object represent a Card component
   //      each key=Card key and value is value
 
-  useEffect(() => {
-    // Import script 
-    const body = document.querySelector('body');
-    const script = document.createElement('script');
-    script.setAttribute('src', 'script.js');
-    body.appendChild(script);
-  }, []);
+  importScript();
 
   const [cardLoading, setCardLoading] = useState(true);
 
@@ -85,6 +89,8 @@ function Home() {
 
 
 function CocktailDetail() {
+
+  importScript();
 
   // save drink details data
   const [drinksDetail, setDrinksDetails] = useState({});

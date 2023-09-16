@@ -2,7 +2,7 @@
 // MODAL MEMU FOR MOBILE
 
 const toggleModal = () => {
-    const modalMenu = document.getElementById('modal-menu');
+    const modalMenu = document.querySelector('.modal-menu');
     if (modalMenu.classList.contains('hide')){
         modalMenu.className = "show";
     }
@@ -15,13 +15,13 @@ const toggleModal = () => {
 } 
 
 // Open modal: Burger menu
-const modalToggler = document.getElementById("burger-menu");
+const modalToggler = document.querySelector(".burger-menu");
 modalToggler.addEventListener('click', () => {
    toggleModal(); 
 });
 
 // Close modal
-const modalCloseBtn = document.getElementById("modal-close-btn");
+const modalCloseBtn = document.querySelector(".modal-close-btn");
 modalCloseBtn.addEventListener('click', () => {
     toggleModal();
 });
