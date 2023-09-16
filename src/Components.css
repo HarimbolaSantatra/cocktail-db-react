@@ -117,7 +117,7 @@ input {
         background-repeat: no-repeat;
         background-size: 100%;
         box-sizing: border-box;
-        height: 50vh;
+        height: 42vh;
         width: 100%;
         font-weight: bold;
         color: white;
@@ -401,7 +401,7 @@ input {
         }
 
         #Carousel {
-                height: 30vh;
+                height: 25vh;
         }
         .bc-title {
                 font-size: 1.6em;

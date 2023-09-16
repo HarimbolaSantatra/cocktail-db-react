@@ -36,3 +36,8 @@ buttons.forEach((toggler) => {
         alert("You clicked a button");
     });
 });
+
+
+const toggleAnnounce () {
+    
+}
